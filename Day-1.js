@@ -1,4 +1,10 @@
 /*
+=====================================
+ JavaScript Execution Context & Hoisting
+=====================================
+*/
+
+/*
   What JS does
 
 Makes pages interactive (clicks, forms, animations)
@@ -117,3 +123,4 @@ when user creates a variable m =5 using var keyword, it create memory space for 
 
 when we try to access z which is not defined anywhere in the code it gives reference error.
 */
+
