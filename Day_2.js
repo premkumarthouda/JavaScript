@@ -1,3 +1,6 @@
+/*
+Scope and Lexical environment
+*/
 console.log(a);
 var a=10;
 console.log(a);
@@ -61,3 +64,4 @@ Lexical environment is Inheritance based.
 
 
 */
+
