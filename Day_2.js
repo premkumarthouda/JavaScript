@@ -30,12 +30,20 @@ function a(){
 }
 var b=20;
 a();
+
 /*
 Output:
 20
 because of lexical environment, function a can access variable b which is defined in global memory.
 */
+function a(){
+    console.log(b);
+}
 
+a();
+var b=20;
+/* When we acces a variable,'b' when it initialize before function call only it can be accesed , 
+but when we try to acces variable in after function call , it logs undefined  */
 function c(){
     d();
     function d(){
@@ -50,5 +58,6 @@ Output:
 30
 because of lexical environment, function d can access variable p which is defined in global memory.
 Lexical environment is Inheritance based.
+
 
 */
