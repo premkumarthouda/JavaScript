@@ -114,4 +114,6 @@ undefined
 5
 ReferenceError: z is not defined
 when user creates a variable m =5 using var keyword, it create memory space for m in global execution context it initializes it with undefined. so when we try to access m before initialization it gives undefined. after initialization it gives 5.
+
 when we try to access z which is not defined anywhere in the code it gives reference error.
+*/
