@@ -1,5 +1,8 @@
 /*console.log("Hello Krishna");*/
 
+/*
+Temporal Dead Zone
+*/
 
 /*var let const  */
 console.log(a);
@@ -64,3 +67,4 @@ In let keyward we used to create variabe in outside block it allocate memory in 
 in let , const block scope is created.
 
 */
+
