@@ -65,6 +65,34 @@ it changes var variable value in block scope but it doesn't change let variable 
 
 In let keyward we used to create variabe in outside block it allocate memory in separate memory or scope.
 in let , const block scope is created.
-
+f2 is not change anything because it is created in separate memory scope. it is known as shadowing. 
 */
+
+/*Shadowing in js */
+var language = "JavaScript";
+
+function learnCode() {
+    var language = "Python"; // Shadows the global 'language'
+    console.log("Inside function:", language); 
+}
+
+learnCode(); // Output: Inside function: Python
+console.log("Global scope:", language); // Output: Global scope: JavaScript
+
+/*illegal Shadowing in js */
+
+var x = 100;
+{
+    let x = 200; // Illegal shadowing
+}
+
+/*there is no error */
+
+let a=20;
+function x(){
+    var a =30; //legal shadowing
+}
+
+//var keyward can allocate memory in function block.
+//let keyward can allocate memory in separate memory scope.
 
