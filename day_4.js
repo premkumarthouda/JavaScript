@@ -83,4 +83,41 @@ setTimeout is asynchronous. When the loop runs, JavaScript says:
 It does not pause to wait for the timers. It schedules them and immediately continues running the loop.
 
 */
+for(let i=0;i<5;i++){
+  setTimeout(function() {
+    console.log(i);
+  }, 1000);
+}
+console.log("Hello ")
+/*
+output:
+Hello
+0
+1
+2
+3
+4
+because let keyward create a new scope for every iteration in loop
+*/
+for(var i=0;i<5;i++){
+  function x(s){
+    setTimeout(function() {
+    console.log(s);
+  }, 1000);
+  }
+  x(i);
+}
+console.log("Hello ");
+
+/*
+Output:
+Hello
+0
+1
+2
+3
+4
+how this work , everytime x(i) function call create a new scope. that's why it prints 0 to 4 values in output.
+*/
+
 
